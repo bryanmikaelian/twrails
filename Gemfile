@@ -20,3 +20,7 @@ gem 'jquery-rails'
 
 # Rspec
 gem 'rspec-rails'
+
+# Twitter
+gem 'omniauth'
+gem 'omniauth-twitter'
