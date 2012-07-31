@@ -1,0 +1,21 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: twrails_development
+  pool: 5
+  username: twrails
+  password:
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: twrails_test
+  pool: 5
+  username: twrails
+  password:
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: twrails_production
+  pool: 5
+  username: twrails
+  password:
