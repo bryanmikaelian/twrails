@@ -16,3 +16,5 @@
 
 # Rspec
 .rspec
+
+.DS_Store
