@@ -146,6 +146,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   haml
   jquery-rails
+  omniauth
   omniauth-twitter
   pg
   rails (= 3.2.6)
