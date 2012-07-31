@@ -18,3 +18,5 @@
 .rspec
 
 .DS_Store
+
+twrails_keys.rb
