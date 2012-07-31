@@ -1,6 +1,6 @@
 Twrails::Application.routes.draw do
 
   resources :sessions
-  root :to => 'session#index'
+  root :to => 'sessions#index'
 
 end
