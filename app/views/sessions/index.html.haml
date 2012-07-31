@@ -6,7 +6,7 @@
       %div{:class => 'hero-unit'}
         %h1 Twrails
         %p A small application that will be the next big thing to hit social media.  Integrated with Twitter.  Sponsored by Instagram. 
-        %a{:class => 'btn-large btn btn-primary'} Sign in 
+        = link_to 'Sign in', new_session_path, :class => 'btn btn-large btn-primary'
     %div{:class => 'span5'}
       %h1 Hey! Did you know?
       %p This is a complete ripoff of twitter and will never make it.  If you hear about Twrails going IPO, you should not invest.
