@@ -3,7 +3,15 @@
 = render 'shared/nav'
 %div{:class => 'container'}
   %div{:class => 'row'}
-    %div{:class => 'span6 offset3'}
-      %h1 Last 20 tweets
-      = @tweets.home_timeline.each do |t|
-        %p= t
+    %div{:class => 'span5 offset3'}
+      %h1 Your timeline
+      %div{:class => 'twrails-container'}
+        %ul{:class => 'unstyled', :id => 'tweet-list'}
+          - @tweets.each do |t|
+            %li
+              = image_tag(t.user.profile_image_url, :class => 'pull-left')
+              %div{:class => 'tweet'}
+                %h4= t.user.name
+                %span= "@#{t.user.screen_name}"
+                %p= t.text
+            %hr
