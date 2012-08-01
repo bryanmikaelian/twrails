@@ -1,1 +1,9 @@
-%h1 Twitters
+- content_for :title do
+  %title= 'Twrails | Timeline'
+= render 'shared/nav'
+%div{:class => 'container'}
+  %div{:class => 'row'}
+    %div{:class => 'span6 offset3'}
+      %h1 Last 20 tweets
+      = @tweets.home_timeline.each do |t|
+        %p= t

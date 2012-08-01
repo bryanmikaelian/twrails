@@ -24,3 +24,4 @@ gem 'rspec-rails'
 # Twitter
 gem 'omniauth'
 gem 'omniauth-twitter'
+gem 'twitter', :git => 'git://github.com/sferik/twitter.git'
