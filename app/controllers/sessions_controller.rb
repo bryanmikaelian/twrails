@@ -6,6 +6,10 @@ class SessionsController < ApplicationController
     redirect_to home_path
   end
 
+  def index
+
+  end
+
 
   protected
 
