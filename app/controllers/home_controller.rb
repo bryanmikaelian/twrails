@@ -1,7 +1,11 @@
 class HomeController < ApplicationController
 
   def index
-    @tweets = twitter.home_timeline
+    if session['twitter_access_token'] && session['twitter_access_secret']
+      @tweets = twitter.home_timeline
+    else
+      redirect_to '/'
+    end
   end
 
 end
