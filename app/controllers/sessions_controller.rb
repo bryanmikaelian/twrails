@@ -10,6 +10,12 @@ class SessionsController < ApplicationController
 
   end
 
+  def destroy
+    session[:twitter_access_token] = nil
+    session[:twitter_access_secret] = nil
+    redirect_to '/'
+  end
+
 
   protected
 

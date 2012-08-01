@@ -4,4 +4,5 @@ Twrails::Application.routes.draw do
   resources :tweets
   match 'auth/twitter/callback', to: 'sessions#create'
   match '/home', :to => 'home#index'
+  match '/logout', :to => 'sessions#destroy'
 end
