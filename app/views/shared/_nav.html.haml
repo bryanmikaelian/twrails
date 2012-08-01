@@ -1,4 +1,9 @@
 %div{:class => 'navbar navbar-fixed-top'}
   %div{:class => 'navbar-inner'}
     %div{:class => 'container'}
-      %a{:class => 'brand', :html => 'home_path'} Twrails
+      %a{:class => 'brand', :href => '/home' } Twrails
+      %div
+        %ul{:class => 'nav pull-right'}
+          %li
+            %a{:href => '/logout'} Logout
+

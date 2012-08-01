@@ -15,5 +15,8 @@
                 %span= "@#{t.user.screen_name}"
                 %p= t.text
             %hr
-    %div{:class => 'span4 offset1'}
+    %div{:class => 'span4'}
       %h1 What are you thinking?
+      = form_tag 'tweets' do
+        = text_area_tag 'status', nil, :class => 'span4', :rows => 3
+        = submit_tag 'Tweet', :class => 'btn btn-primary pull-right'
