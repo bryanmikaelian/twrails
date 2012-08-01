@@ -15,11 +15,4 @@ class SessionsController < ApplicationController
     session[:twitter_access_secret] = nil
     redirect_to '/'
   end
-
-
-  protected
-
-  def auth_hash
-    request.env['omniauth.auth']
-  end
 end
