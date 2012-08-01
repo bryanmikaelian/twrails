@@ -3,7 +3,7 @@
 = render 'shared/nav'
 %div{:class => 'container'}
   %div{:class => 'row'}
-    %div{:class => 'span5 offset3'}
+    %div{:class => 'span6'}
       %h1 Your timeline
       %div{:class => 'twrails-container'}
         %ul{:class => 'unstyled', :id => 'tweet-list'}
@@ -15,3 +15,5 @@
                 %span= "@#{t.user.screen_name}"
                 %p= t.text
             %hr
+    %div{:class => 'span4 offset1'}
+      %h1 What are you thinking?
