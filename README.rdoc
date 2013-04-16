@@ -1,1 +1,1 @@
-twrails.herokuapp.com
+http://twrails.herokuapp.com
